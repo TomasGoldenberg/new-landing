@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+body{
+    background:black
+}
+
+
+
+
+.header{
+    font-family: 'Heebo', sans-serif;
+    height:120px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 50px;
+    background:rgb(0, 0, 0);
+    font-size: 18px;
+    border-bottom:1px solid rgb(228, 228, 228);
+    position:sticky;
+    top:0;
+    z-index:10
+    
+  
+
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+    margin-top:11px;
+    margin-left:-150px 
+}
+
+.header a{
+    margin-top:50px;
+    color: #797979;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 1s;
+    margin-left:70px;
+   
+}
+
+.header a:hover {
+  color:rgba(50,0,215,1);
+  
+}
+
+.contact-button{
+    margin-top:-20px;
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    height: 35px;
+    border: 2px solid rgba(50,0,215,1);
+    width: 170px;
+    border-radius: 150px;
+    background-color:rgba(50,0,215,1);
+    color: white;
+    transition: 0.5s;
+    
+ 
+    
+    
+}
+
+
+
+.contact-button:hover{
+    
+    color:rgba(50,0,215,1);
+    background-color:#fff;
+    border: 2px solid rgba(50,0,215,1);
+
+ 
+}
+
+/*navbar*/
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgba(50,0,215,1);
+    margin-top:-50px;
+    margin-right: -150px;
+    
+
+    
+}
+.down--button__container ul{
+   
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 300px;
+    text-align: right;
+    padding-right: 20px;
+    height: 450px;
+    background-color:rgb(255, 253, 253);
+    border-radius: 30px;
+    margin-top:15px;
+    
+}
+
+
+.down--button__container:hover ul, ul:hover{
+    display: flex;
+    flex-direction: column;
+    margin-left:-130px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.down--button__container ul li{
+    height: 50px;
+    background-color: rgb(255, 253, 253);
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 48px;
+will-change: transform;
+transition: 1s  ;
+    
+ 
+}
+
+.down--button__container ul li:hover a  ,a {
+    color:rgba(50,0,215,1)
+}
+
+.down--button__container ul li:hover  i {
+    color:rgba(50,0,215,1)
+}
+
+.down--button__container ul li i{
+    color:#797979;
+    margin-left:10px
+}
+
+.down--button__container ul li a {
+    background:transparent;
+    padding-right: 10px;
+    color:#797979;
+    text-decoration: none;
+    margin-top:-5px;
+    
+
+}
+
+.down--button__container li a:hover{
+    
+    color:rgba(50,0,215,1);
+
+}
+
+.down--button__container ul li:hover {
+    border-radius: 48px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  12px 12px 24px #ebebeb, 
+             -12px -12px 24px #ffffff;
+    transform: translate(15px);
+}
+
+
+.down--button{
+    margin-top:50px;
+  
+}
+
+
+.menu{
+    display:flex;
+    justify-content:flex-end
+}
+/*navbar*/
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display:none;
+    width:65px;
+    height: 60px;
+    
+   
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(216, 216, 216, 0.5);
+}
+
+
+
+
+
+
+
+
+.post-carrousel{
+    margin-left: 230px;
+    color:white;
+    margin-top:50px;
+    margin-bottom: 200px;
+}
+
+.icons--container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons--item{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.icons--item i{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 40px;
+}
+
+.icons--item i:hover{
+transform: scale(1.5, 1.5);
+}
+
+.banda{
+    transform: rotate(10deg);
+    margin-left: -20px;
+}
+
+
+.banda-azul{
+    transform: rotate(-10deg);
+    margin-left: -20px;
+}
+
+
+.about{
+    margin-top:200px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white
+}
+
+.about h2{
+    margin-top :-100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}

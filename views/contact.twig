@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/8a03dd9389.js" crossorigin="anonymous"></script>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bySubliminal</title>
+</head>
+
+<body>
+<!--Header-->
+    <header class="header">
+
+        <img src="../public/assets/logo.svg" alt="logo" class="logo">
+
+
+        <input type="checkbox" id="btn-menu"/>
+        <label for="btn-menu">
+        <i class="fas fa-bars fa-4x fa-lg" ></i>
+        </label>
+           
+         <nav class="menu"> 
+            <a href="/">Home</a>
+
+            <a href="/portfolio" >Our Work</a>
+        <a href="./contact" >
+            <button class="contact-button">Contact us</button>
+        </a>
+            
+            <div class="down--button__container">
+
+                    <div class="down--button">
+                        <a href="#products">Services</a>
+                    </div>
+
+
+
+                <ul >
+                        <div class="triangulo"></div>
+                        
+                        <li>
+                            <i class="fas fa-magic fa-2x"></i>
+                            <a href="/branding" >Branding</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-pen-nib fa-2x"></i>
+                            <a href="/packaging">Graphic Design</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-box-open fa-2x"></i>
+                            <a href="/campaign">Packaging</a>
+                        </li>
+
+                        <li>
+                            <i class="far fa-lightbulb fa-2x"></i>
+                            <a href="/campaign">Campaigns</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                            <a href="/ux">Website</a>
+                        </li>
+
+                        <li>
+                            <i class="fab fa-linode fa-2x"></i>
+                            <a href="/design">UI/UX </a>
+                        </li>
+
+
+
+                    </ul>
+            </div>
+            <a href="#faq">
+                <i class="far fa-questsion-circle " ></i>
+            </a>
+            
+            
+        </nav>
+
+        
+    </header>
+     <!--/Header-->
+
+    <div class="form--container">
+        
+
+            <div class="alert" >
+                {{responseMessage}}
+            </div>
+
+        <form action="/contact" method="post" >
+
+            <label for="" ></label>
+            <input type="text" placeholder=" Name/Company Name" class="form--input" name="name"> <br>
+
+
+            <label for="" ></label>
+            <input type="text" placeholder=" Example@example.com" class="form--input" name="email"><br>
+
+
+            <label for="" ></label>
+            <input type="text" placeholder=" Estimated Budget " class="form--input" name="budget"><br>
+
+            <label for="" ></label>
+            <input type="text" placeholder=" Estimated Dead Line" class="form--input" name="time"><br>
+
+            <label for="" ></label>
+           <textarea class="form--input description" placeholder= " Description"  name="description"></textarea>       <br>
+           
+            <button type="submit" class="form--button ">SEND</button>
+       
+        </form>
+        <div class="details">
+            <i class="fas fa-shield-alt"></i>
+            <h5>Your data is safe</h5>
+            <a href="/terms"> 
+            <i class="far fa-question-circle " id="terms"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

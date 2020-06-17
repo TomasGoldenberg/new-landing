@@ -1,0 +1,341 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url("https://fotos.subefotos.com/bec53377527afe86890cc778ab938412o.png?fbclid=IwAR3S_4oZLmBAG3Y-gprBEQ-i0fMAOqdh4h7hyDs8t80yhnnR15GBuQtWYuw");
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+
+
+.header{
+    font-family: 'Heebo', sans-serif;
+    height:120px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 50px;
+    background:rgb(255, 255, 255);
+    font-size: 18px;
+    border-bottom:1px solid rgb(228, 228, 228);
+    position:sticky;
+    top:0;
+    z-index:10
+    
+  
+
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+    margin-top:11px;
+    margin-left:-150px 
+}
+
+.header a{
+    margin-top:50px;
+    color: #797979;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 1s;
+    margin-left:70px;
+   
+}
+
+.header a:hover {
+  color:rgba(50,0,215,1);
+  
+}
+
+.contact-button{
+    margin-top:-20px;
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    height: 35px;
+    border: 2px solid rgba(50,0,215,1);
+    width: 170px;
+    border-radius: 150px;
+    background-color:rgba(50,0,215,1);
+    color: white;
+    transition: 0.5s;
+    
+ 
+    
+    
+}
+
+
+
+.contact-button:hover{
+    
+    color:rgba(50,0,215,1);
+    background-color:#fff;
+    border: 2px solid rgba(50,0,215,1);
+
+ 
+}
+
+/*navbar*/
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgba(50,0,215,1);
+    margin-top:-50px;
+    margin-right: -150px;
+    
+
+    
+}
+.down--button__container ul{
+   
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 300px;
+    text-align: right;
+    padding-right: 20px;
+    height: 450px;
+    background-color:rgb(255, 253, 253);
+    border-radius: 30px;
+    margin-top:15px;
+    
+}
+
+
+.down--button__container:hover ul, ul:hover{
+    display: flex;
+    flex-direction: column;
+    margin-left:-130px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.down--button__container ul li{
+    height: 50px;
+    background-color: rgb(255, 253, 253);
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 48px;
+will-change: transform;
+transition: 1s  ;
+    
+ 
+}
+
+.down--button__container ul li:hover a  ,a {
+    color:rgba(50,0,215,1)
+}
+
+.down--button__container ul li:hover  i {
+    color:rgba(50,0,215,1)
+}
+
+.down--button__container ul li i{
+    color:#797979;
+    margin-left:10px
+}
+
+.down--button__container ul li a {
+    background:transparent;
+    padding-right: 10px;
+    color:#797979;
+    text-decoration: none;
+    margin-top:-5px;
+    
+
+}
+
+.down--button__container li a:hover{
+    
+    color:rgba(50,0,215,1);
+
+}
+
+.down--button__container ul li:hover {
+    border-radius: 48px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  12px 12px 24px #ebebeb, 
+             -12px -12px 24px #ffffff;
+    transform: translate(15px);
+}
+
+
+.down--button{
+    margin-top:50px;
+  
+}
+
+
+.menu{
+    display:flex;
+    justify-content:flex-end
+}
+/*navbar*/
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display:none;
+    width:65px;
+    height: 60px;
+    
+   
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(216, 216, 216, 0.5);
+}
+
+
+
+
+
+
+
+ 
+.form--container{
+    position: relative;
+    left: 443px;
+    top:102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255,.8);
+    border-radius: 40px;
+    width:437px;
+    height: 500px;
+
+}
+
+.alert{
+    color:rgba(50,0,215,1)
+
+}
+
+
+.form--input{
+    width:300px;
+    color:rgba(50,0,215,1);
+    margin-top:20px;
+    height: 30px;
+    border: 1px solid rgba(216, 216, 216 );
+  border-radius: 50px;
+background:rgba(248, 248, 248)
+}
+.description{
+    height: 60px;
+    border-radius:20px;
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+
+.form--button{
+    cursor: pointer;
+    margin-top:40px;
+    position: relative;
+    left:105px;
+    height: 40px;
+    border-radius: 50px;
+    width:100px;
+    border: none;
+    background-color:rgba(50,0,215,1);
+    color: white;
+    transition: 0.5s;
+
+    
+}
+
+
+.form--button:first-child:hover{
+    background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+
+.form--button:last-child:hover{
+    background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+
+.form--button:first-child::before,
+.form--button:last-child::before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top:-5px;left:-5px;right:-5px;bottom:-5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.form--button:hover:first-child::before,
+.form--button:hover:last-child::before{
+    opacity: 1;
+    z-index:-1;
+}
+
+.form--button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+
+.details{
+    display: flex;
+    
+}
+
+#terms{
+    position: relative;
+    left:120px;
+    top:20px;
+    color:rgb(129, 129, 129)
+}
+
+.details h5{
+    position: relative;
+    right:120px;
+    top:-3px;
+    color:rgb(129, 129, 129)
+
+
+
+}
+.details i{
+    position: relative;
+    right:130px;
+    top:20px;
+    color:rgb(129, 129, 129)
+
+
+
+}
+
+
+
+@keyframes glow{
+    0%{
+        z-index: 1;
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+    }

@@ -92,16 +92,50 @@ $map->get("pedidos","/pedidos", [
         "action"     => "getBranding"
     ]);
 
+    $map->get("website","/website",[
+        "controller" => "App\Controllers\WebsiteController",
+        "action"     => "getWebsite"
+    ]);
+
+    $map->get("ui","/ui",[
+        "controller" => "App\Controllers\UiController",
+        "action"     => "getUi"
+    ]);
+
+    $map->get("packaging","/packaging",[
+        "controller" => "App\Controllers\PackagingController",
+        "action"     => "getPackaging"
+    ]);
+
+    $map->get("design","/design",[
+        "controller" => "App\Controllers\DesignController",
+        "action"     => "getDesign"
+    ]);
+
+    $map->get("campaign","/campaign",[
+        "controller" => "App\Controllers\CampaignController",
+        "action"     => "getCampaign"
+    ]);
+    
+    
+    
+    
+    
+    
+    
+    
     
     $map->get("notfound","/notfound", [
         "controller" => "App\Controllers\NotFoundController",
         "action"     => "getNotFound"
     ]);
-
     $matcher = $routerContainer->getMatcher();
     $route = $matcher->match($request);
 
     
+
+
+
 
 
     if(!$route){

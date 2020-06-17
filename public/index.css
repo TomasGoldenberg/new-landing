@@ -193,7 +193,7 @@ header label{
 
 header label:hover{
     cursor: pointer;
-    background: rgba(216, 216, 216, 0.5);
+    
 }
 
 
@@ -226,6 +226,8 @@ main img{
 }
 
 .main__text h1{
+ 
+    position:relative;
     color:#3d3d3d;
 }
 
@@ -244,7 +246,10 @@ main img{
 
 
 
-
+.marcas{
+    width:1350px;
+    height:116px
+}
 
 
 
@@ -313,7 +318,7 @@ box-shadow:  17px 17px 22px #787878,
 .getStarted{
     display: flex; 
     justify-content: space-between;
-   
+   margin-top:-100px
 }
     
 
@@ -497,7 +502,7 @@ margin-bottom: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:45px;
+    margin-top:55px;
     text-align: center;
     transition:1s;
     border-radius: 10px;
@@ -512,11 +517,11 @@ box-shadow:  12px 12px 24px #c9c9c9,
     display:none;
     background: transparent;
     color:#626262;
-    width: 100%;
+    
 }
 
 .faq--question{
-    width: 90%;
+    
     background: transparent;
     height: 30px;
     color:#626262;
@@ -699,14 +704,59 @@ box-shadow:  7px 7px 15px #bfbfbf,
 
 
 
+@media(max-width:1220px){
+    .getStarted{
+        position:relative;
+    bottom: 430px;
 
-@media(max-width:760px){
+    }
+    .ilustration{
+       position:relative;
+        width: 703px;
+       left:20px
+       
+    }
+  
+    .marcas{
+        width:1200px;
+        height:116px
+    }
+
+    .logo{
+        position:relative;
+        left:30px
+    }
+
+    .top-title{
+        right:40px
+    }
+
+    .sub-title{
+        right:110px
+    }
+    
+    .main__text h1 {
+        left:20px
+
+    }
+}
 
 
+@media(max-width:500px){
+
+    .logo{
+        position:relative;
+        left:65px
+    }
+ 
 
     header label{
         display:flex;
-        margin-top:29px
+        margin-top:29px;
+        position:relative;
+        left:80px;
+        top:5px
+
         
     }
 
@@ -714,15 +764,32 @@ box-shadow:  7px 7px 15px #bfbfbf,
         position:absolute;
         background:white;
         flex-direction:column;
-        margin-right:-150%;
+        left:-250px;
         width:40%;
-        transition:.5s
+        transition:.5s;
+      
+        
+        
     }
 
+    .fa-question-circle{
+        position:relative;
+        left:30px
+    }
+
+ 
+
     #btn-menu:checked ~ .menu{
-        margin-right:-28%;
-        border-radius:30px;
-        margin-top:100px
+        left:0px;
+        border-radius:50px;
+        margin-top:121px;
+        width:410px;
+        height: 634px;
+        justify-content: space-between;
+      
+        
+
+
     }
 
     .triangulo{
@@ -732,17 +799,150 @@ box-shadow:  7px 7px 15px #bfbfbf,
     .down--button__container:hover ul, ul:hover{
         display: flex;
         flex-direction: column;
-        margin-left:-100%;
+        position: relative;
         justify-content: center;
         align-items: center;
-        margin-top:-300px
+        left:123px;
+    }
+
+  
+    main{
+        flex-direction: column;
+    }
+
+    .top-title{
+        margin-top:50px
+    }
+   
+    .marcas{
+        height: 50px;
+        width: 450px;
+    }
+
+    .ilustration{
+        height: 300px;
+        width: 403px;
+        position: relative;
+        left: 10px
+       
+    }
+
+    .mancha{
+    display: none;
+    }
+
+    .steps{
+     
+        height: 1530px;
+        margin-top:50px;
+
+    }
+    .step--container{
+        
+        margin-top:50px;
+            
+            flex-direction:column;
+            margin-bottom:600px;
+            position:relative;
+            left:85px
+    }
+
+    .step--container__item{
+        margin-top:70px
     }
 
     .hero{
-        flex-direction:column-reverse
+        margin-bottom:0px;
+    
+        margin-top: 50px
     }
 
-    .banner , .hero-img, .hero-img img{
-        width:760px
-    }
+.hero-img{
+    width:410px;
+    height: 310px;
+    z-index: -11;
+}
+
+.hero-img img{
+    width:410px;
+    height: 310px;
+    z-index: -11;
+}
+
+
+.faq{
+    margin-top: 50px;
+  flex-direction: column;
+}
+
+.faq--img{
+    margin-right: 70px;
+    margin-left: -70px;
+    margin-bottom: 70px;
+
+    width:410px;
+    height: 305px;
+    position:relative;
+    left:35px
+  
+    
+}
+
+.faq--img img {
+    width:410px;
+    height: 305px;
+    position:relative;
+    left:35px
+}
+
+
+.faq--cointainer{
+    position: relative;
+    left:30px;
+    width:350px;
+}
+
+.faq--cointainer h6{
+    left: 20px;
+
+}
+
+.faq-button{
+    position:relative;
+    right:75px
+}
+.faq-p{
+    position:relative;
+    right:75px
+}
+
+footer{
+    flex-direction: column;
+    height: 440px;
+
+}
+footer img{
+    margin-right:0px;
+    margin-top:-70px
+
+
+
+}
+
+footer a{
+margin-right: 0px;
+}
+
+.gotop-container{
+    left:338px;
+    bottom:5px
+}
+
+.gotop-button{
+    left:338px;
+   bottom:5px
+
+}
+
+
 }

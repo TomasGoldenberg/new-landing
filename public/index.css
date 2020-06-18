@@ -417,6 +417,14 @@ margin-bottom: 50px;
 
 }
 
+.getStarted--title{
+    color: #797979;
+    position: relative;
+    left:-40px;
+    font-size: 30px;
+    height: 20px;
+    font-family: 'Heebo', sans-serif;
+}
 
 
 

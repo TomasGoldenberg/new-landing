@@ -767,9 +767,6 @@ box-shadow:  7px 7px 15px #bfbfbf,
         left:-250px;
         width:40%;
         transition:.5s;
-      
-        
-        
     }
 
     .fa-question-circle{
@@ -858,13 +855,13 @@ box-shadow:  7px 7px 15px #bfbfbf,
     }
 
 .hero-img{
-    width:410px;
+    width:100%;
     height: 310px;
     z-index: -11;
 }
 
 .hero-img img{
-    width:410px;
+    width:100%;
     height: 310px;
     z-index: -11;
 }

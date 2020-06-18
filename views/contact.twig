@@ -9,6 +9,8 @@
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bySubliminal</title>
 </head>
@@ -90,30 +92,33 @@
      <!--/Header-->
 
     <div class="form--container">
-        
+        <div class="form--img"> 
+         <img src="https://fotos.subefotos.com/2da379363e2b0da7723c61bb54b4b121o.png?fbclid=IwAR1gjbLHOuIz-93l-Q0CeEwVrEcHS4-u6kjKBPx7XJSdtwaR7HFb2xqLuk8"/>
+        </div>
+        <img src="../public/assets/logo.svg" class="form--logo"> 
 
             <div class="alert" >
                 {{responseMessage}}
             </div>
 
         <form action="/contact" method="post" >
-
             <label for="" ></label>
-            <input type="text" placeholder=" Name/Company Name" class="form--input" name="name"> <br>
-
-
-            <label for="" ></label>
-            <input type="text" placeholder=" Example@example.com" class="form--input" name="email"><br>
+            <input type="text" placeholder="   Name/Company Name" class="form--input" name="name"> <br>
 
 
             <label for="" ></label>
-            <input type="text" placeholder=" Estimated Budget " class="form--input" name="budget"><br>
+            <input type="text" placeholder="   Example@example.com" class="form--input" name="email"><br>
+
 
             <label for="" ></label>
-            <input type="text" placeholder=" Estimated Dead Line" class="form--input" name="time"><br>
+            <input type="text" placeholder="   Estimated Budget " class="form--input" name="budget"><br>
 
             <label for="" ></label>
-           <textarea class="form--input description" placeholder= " Description"  name="description"></textarea>       <br>
+            <input type="text" placeholder="   Estimated Dead Line" class="form--input" name="time"><br>
+
+            <label for="" ></label>
+           <textarea class="form--input description" placeholder= "   Description"  name="description" style="    font-family:Arial, FontAwesome;
+"></textarea>       <br>
            
             <button type="submit" class="form--button ">SEND</button>
        

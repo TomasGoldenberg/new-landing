@@ -752,7 +752,7 @@ footer img{
        width: 200px;
     position: relative;
     left:50px;
-    top:200px
+    top:220px
    }
 
 
@@ -773,17 +773,26 @@ footer img{
 
 }
 .main-subtitle{
-    position:relative;
-    right:170px;
-    width:350px;
-    font-size: 17px; 
+    position: relative;
+    right: 173px;
+    width: 350px;
+    font-size: 22px;
 
 }
 .sub-title{
-    position:relative;
-    left:70px;
-    width:150px
+    position: relative;
+    left: -143px;
+    width: 79px;
+    top: 45px;
   
+}
+
+.innerSolapa a button{
+    margin-left: -172px;
+    top: -21px;
+    height: 34px;
+    width: 161px;
+
 }
 .carrousel{
     margin-left:105px

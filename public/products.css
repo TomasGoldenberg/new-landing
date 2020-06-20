@@ -32,6 +32,24 @@ body{
 
 }
 
+.top-title{
+    margin-left: 280px; 
+    margin-bottom: 15px; 
+    font-size: 15px;
+}
+
+.main-title{
+    letter-spacing: 4px; 
+    font-size: 80px; 
+    font-family: 'Archivo Black', sans-serif;
+}
+.sub-title{
+   margin-right: 320px; 
+   margin-top: 15px; 
+   font-size: 15px;
+}
+
+
 .innerSolapa a button{
     position: relative;
     height: 60px;
@@ -410,13 +428,14 @@ header label:hover{
 
     }
     
-    .steps p{
-        color: rgb(77, 77, 77);
+    .step--text{
         width: 1040px;
     text-align: center;
     font-family: 'Heebo', sans-serif;
 
-  }
+    color: rgb(77, 77, 77);
+    }
+ 
   
   
   .step--item{
@@ -459,7 +478,7 @@ position:relative;
 
 }
 
-.step--item p {
+.step--text {
     
     width: 1500px;
 
@@ -602,4 +621,271 @@ footer img{
     100%{
         transform: rotate(360deg);
     }
+}
+
+
+
+
+
+@media(max-width:1170px){
+    .logo{
+        position:relative;
+        left:115px
+    }
+    .innerSolapa{
+        position:relative;
+        right:115px
+    }
+
+    .imagen{
+        margin-left: 40px; 
+    }
+
+    .carrousel{
+        display:flex;
+        flex-wrap: wrap;
+    width:700px ;
+
+    }
+
+    .carrousel--container{
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carrousel--item{
+        margin-top:100px
+    }
+
+
+    .steps h1{
+        width: 800px;
+    }
+
+    .steps--description{
+        width:900px
+    }
+
+    #step--title1{
+        top:-150px;
+   
+    left:300px;
+    }
+
+    #step--title2{
+        left: 210px;
+    bottom: 120px;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:500px){
+
+    .logo{
+        position:relative;
+        left:65px
+    }
+ 
+
+    header label{
+        display:flex;
+        margin-top:29px;
+        position:relative;
+        left:80px;
+        top:5px
+
+        
+    }
+
+    .menu{
+        position:absolute;
+        background:white;
+        flex-direction:column;
+        left:-250px;
+        width:40%;
+        transition:.5s;
+    }
+
+
+    .header-menu{
+        color:white
+    }
+
+    #btn-menu:checked ~ .menu{
+        left:0px;
+        border-radius:50px;
+        margin-top:121px;
+        width:440px;
+        height: 634px;
+        justify-content: space-between;
+      
+        
+
+
+    }
+
+    .triangulo{
+        display:none
+    }
+
+    .down--button__container:hover ul, ul:hover{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left:180px;
+    }
+
+
+    
+  
+
+   .imagen{
+       width: 100px;
+       width: 200px;
+    position: relative;
+    left:50px;
+    top:200px
+   }
+
+
+   .top-title{
+    margin-left: -400px; 
+    margin-top:-50px
+
+}
+
+.main-title{
+    letter-spacing: 4px; 
+    font-size: 50px; 
+    font-family: 'Archivo Black', sans-serif;
+    width:400px;
+    position:relative;
+    right:150px;
+    margin-bottom:15px
+
+}
+.main-subtitle{
+    position:relative;
+    right:170px;
+    width:350px;
+    font-size: 17px; 
+
+}
+.sub-title{
+    position:relative;
+    left:70px;
+    width:150px
+  
+}
+.carrousel{
+    margin-left:105px
+}
+.carrousel--container{
+    flex-direction:column;
+}
+
+.steps h1{
+    width: 200px;
+    font-size:45px
+}
+
+.steps--description{
+    width:300px;
+    font-size:16px;
+    text-align: center;
+}
+
+.step--item{
+    flex-direction:column
+}
+
+.step--img{
+    position:relative;
+    left:0px;
+    bottom:50px;
+   
+    margin-bottom:10px
+
+
+}
+
+#step--title1{
+    
+top:0;
+margin-bottom:20px;
+left:140px;
+}
+
+.step--text{
+    width: 350px;
+    position:relative;
+    left:5px;
+    margin-bottom:60px;
+    text-align: center;
+
+
+}
+
+#step--title2{
+    left: 33px;
+bottom: -250px;
+        width:300px
+
+
+}
+
+.top{
+    margin-top:-270px;
+    margin-bottom:40px
+}
+
+.bottom{
+    position:relative;
+    top:270px;
+   
+}
+
+.bigImg{
+    margin-top:50px
+}
+
+
+.includes--container{
+    width:400px;
+
+}
+
+.includes--item{
+    width:90%
+}
+
+.start-button{
+    margin-top:60px;
+
+}
+
+footer{
+    flex-direction: column;
+    height: 440px;
+
+}
+footer img{
+    margin-right:0px;
+    margin-top:-70px
+
+
+
+}
+
+footer a{
+margin-right: 0px;
+}
 }

@@ -844,7 +844,6 @@ box-shadow:  7px 7px 15px #bfbfbf,
     }
     .step--container{
         
-        margin-top:50px;
             
             flex-direction:column;
             margin-bottom:600px;
@@ -854,6 +853,12 @@ box-shadow:  7px 7px 15px #bfbfbf,
 
     .step--container__item{
         margin-top:70px
+    }
+
+
+    .getStarted--title{
+        margin-top:640px;
+        left:20px
     }
 
     .hero{
@@ -876,7 +881,7 @@ box-shadow:  7px 7px 15px #bfbfbf,
 
 
 .faq{
-    margin-top: 50px;
+   margin-top:-500px;
   flex-direction: column;
 }
 

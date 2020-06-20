@@ -364,3 +364,101 @@ background:rgba(248, 248, 248)
         background-position: 400%;
     }
     }
+
+    @media(max-width:500px){
+
+        .logo{
+            position:relative;
+            left:65px
+        }
+     
+    
+        header label{
+            display:flex;
+            margin-top:29px;
+            position:relative;
+            left:80px;
+            top:5px
+    
+            
+        }
+    
+        .menu{
+            position:absolute;
+            background:white;
+            flex-direction:column;
+            left:-250px;
+            width:40%;
+            transition:.5s;
+        }
+    
+    
+        .header-menu{
+            color:white
+        }
+    
+        #btn-menu:checked ~ .menu{
+            left:0px;
+            border-radius:50px;
+            margin-top:121px;
+            width:440px;
+            height: 634px;
+            justify-content: space-between;
+          
+            
+    
+    
+        }
+    
+        .triangulo{
+            display:none
+        }
+    
+        .down--button__container:hover ul, ul:hover{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            left:180px;
+        }
+
+        .form--container{
+            width:390px;
+            left:25px;
+    height: 780px;
+    margin-top:50px
+
+        }
+
+        .form--input{
+            width:300px;
+            margin-top:30px
+        }
+
+        .form--button{
+            left:105px;
+
+        }
+
+        #terms{
+            left:40px
+        }
+
+        .form--img, .form--img img{
+            height: 305px;
+            margin-top:-50px
+    
+        }    
+
+        .form--logo{
+            margin-top:-80px
+
+         }
+
+        .details{
+            position:relative;
+            left:40px    
+        }
+
+    }

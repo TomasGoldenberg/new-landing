@@ -420,7 +420,7 @@ header label:hover{
     }
     .steps--description{
     font-family: 'Heebo', sans-serif;
-        
+        width: 1200px;
         color:white; 
         font-size: 25px;
          margin-bottom:40px;
@@ -534,7 +534,7 @@ position:relative;
     display: flex;
     justify-content: space-between;
     border-bottom:1px solid #797979;
-    width: 30%;
+    width: 50%;
     margin-top:20px
     
 }
@@ -795,7 +795,8 @@ footer img{
 
 }
 .carrousel{
-    margin-left:105px
+    margin-left:105px;
+    margin-top:90px
 }
 .carrousel--container{
     flex-direction:column;
@@ -807,7 +808,7 @@ footer img{
 }
 
 .steps--description{
-    width:300px;
+    width:250px;
     font-size:16px;
     text-align: center;
 }

@@ -197,6 +197,31 @@ header label:hover{
 }
 
 
+.covid{
+    width: 100%;
+    background :rgba(50,0,215,1);
+    background: linear-gradient(90deg, rgba(50,0,215,1) 0%, rgba(140,52,216,1) 49%, rgba(0,219,255,1) 100%);     color:white;
+    position:absolute;
+  
+    z-index:5;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    align-items:center
+
+}
+
+.covid a{
+color:white;
+position:relative;
+left:5px;
+
+}
+.hide{
+    display:none
+}
+
 
 
 main {
@@ -810,7 +835,9 @@ box-shadow:  7px 7px 15px #bfbfbf,
         left:123px;
     }
 
-  
+  .covid{
+      display:none;
+  }
     main{
         flex-direction: column;
     }

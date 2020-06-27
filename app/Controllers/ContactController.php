@@ -44,7 +44,7 @@ class ContactController extends BaseController {
 
                 $contact->save(); 
 
-                $responseMessage="  GOOD JOB! WE WILL GET IN TOUCH QUICKLY";
+                $responseMessage="Thank you ! Our representative will contact you shortly.";
             }catch(\Exception $e){
                 
                 $responseMessage="ALL THE FIELDS MUST BE FILLED";

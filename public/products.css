@@ -318,7 +318,7 @@ header label:hover{
     will-change: transform;
     background-color: transparent;
     width:300px ;
-    height:500px
+    height:400px
 }
 
 
@@ -788,8 +788,8 @@ footer img{
 }
 
 .innerSolapa a button{
-    margin-left: -172px;
-    top: -21px;
+    margin-left: -152px;
+    top: -51px;
     height: 34px;
     width: 161px;
 

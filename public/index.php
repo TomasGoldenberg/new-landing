@@ -85,6 +85,16 @@ $map->get("pedidos","/pedidos", [
     "action"     => "getPedidos"
 ]);
 
+//TERMS & PRIVACY
+$map->get("terms","/terms", [
+    "controller" => "App\Controllers\TermsController",
+    "action"     => "getTerms"
+]);
+
+$map->get("privacy","/privacy", [
+    "controller" => "App\Controllers\PrivacyController",
+    "action"     => "getPrivacy"
+]);
 
 //PRODUCTS
     $map->get("branding","/branding", [

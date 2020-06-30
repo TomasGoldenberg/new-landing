@@ -39,6 +39,7 @@ body{
 }
 
 .main-title{
+    width: 500px;
     letter-spacing: 4px; 
     font-size: 80px; 
     font-family: 'Archivo Black', sans-serif;
@@ -512,7 +513,7 @@ position:relative;
     height: 250px;
     width: 250px;
     will-change: transform;
-    animation:spiral 10s linear infinite;
+    animation:float 10s linear infinite;
 }
 
 
@@ -544,13 +545,16 @@ position:relative;
  font-size:25px
 }
 
+
+
 .start-button{
+    position:relative;
     border: none;
     margin-top:30px;
     outline: none;
     height: 60px;
     width: 200px;
-    color: #fff;
+    color: #fff !important;
     font-size: 15px;
     border-radius:50px;
     letter-spacing: 2px;
@@ -562,9 +566,35 @@ position:relative;
 .start-button:first-child:hover{
     background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
     background-size: 400%;
-    z-index: 1;
-    animation: glow 8s linear infinite;}
+}
 
+.start-button:last-child:hover{
+    background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+
+.start-button:first-child::before,
+.start-button:last-child::before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top:-5px;left:-5px;right:-5px;bottom:-5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.start-button:hover:first-child::before,
+.start-button:hover:last-child::before{
+    opacity: 1;
+    z-index:-1;
+}
+
+.start-button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
 
 
 
@@ -749,9 +779,10 @@ footer img{
 
    .imagen{
        width: 100px;
+       margin-top: -100px; 
        width: 200px;
     position: relative;
-    left:50px;
+    left:0px;
     top:220px
    }
 
@@ -780,16 +811,13 @@ footer img{
 
 }
 .sub-title{
-    position: relative;
-    left: -143px;
-    width: 79px;
-    top: 45px;
+   display:none
   
 }
 
 .innerSolapa a button{
-    margin-left: -152px;
-    top: -51px;
+    margin-left: -348px;
+top: 37px;
     height: 34px;
     width: 161px;
 
@@ -804,7 +832,8 @@ footer img{
 
 .steps h1{
     width: 200px;
-    font-size:45px
+    font-size:45px;
+    margin-right:40px
 }
 
 .steps--description{
@@ -864,7 +893,9 @@ bottom: -250px;
 }
 
 .bigImg{
-    margin-top:50px
+    margin-top:150px;
+    margin-bottom:50px
+
 }
 
 

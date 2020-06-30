@@ -206,7 +206,13 @@ header label:hover{
 
 
 
-
+.title{
+    font-family: 'Heebo', sans-serif;
+color: white;
+position: relative;
+left: 512px;
+bottom: -24px;
+}
 
 
 .post-carrousel{
@@ -219,6 +225,7 @@ header label:hover{
 .icons--container{
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 .icons--item{

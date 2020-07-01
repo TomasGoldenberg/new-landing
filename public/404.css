@@ -1,18 +1,19 @@
 body{
     padding: 0%;
     margin: 0%;
-    background-image: url("https://fotos.subefotos.com/34c7d9097c691d2a278e93d36f5359f1o.png?fbclid=IwAR2KVIh4Yi8Zx4CzrS0XWsvVC7_KuyXxndSKrqhDF-tfu7Lklj4FgdP8ekg");
-    background-size: 1400px 1000px;
-    background-repeat: no-repeat;
-}
 
+}
+img{
+    height: 800px;
+width: 1400px;
+}
 .super_hover button{
     position: absolute;
     z-index: 9;
     height: 60px;
     width: 200px;
     left:580px;
-    top:100px;
+    top:60px;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -70,17 +71,16 @@ body{
     
     
 @media(max-width:500px){
-        body{
-            width:100%;
-    background-size: 500px 700px;
-
-        }
-
+    img{
+        height: 500px;
+    width: 100%;
+    }
 
     .super_hover button{
-    top:700px;
+    top:500px;
     left:0px;
     width: 100%;
       border-radius:0px;
+      height: 140px;
     }
 }

@@ -207,25 +207,46 @@ header label:hover{
 
 
 .title{
-    font-family: 'Heebo', sans-serif;
+    font-size: 100px;
+    margin-top:50px;
+    font-family: 'Archivo Black', sans-serif;
+
 color: white;
 position: relative;
-left: 512px;
-bottom: -24px;
+left: 327px;
+bottom: -11px;
 }
 
+.subtitle{
+color:rgba(50,0,215,1);
+font-size: 40px;
+font-weight: lighter;
+font-family: 'Heebo', sans-serif;
+position: relative;
+left: 507px;
+top: 22px;
+letter-spacing: 17px;
 
+}
+
+main{
+    margin-top:-50px
+}
 .post-carrousel{
-    margin-left: 230px;
+font-family: 'Heebo', sans-serif;
+
+    margin-left: 205px;
     color:white;
     margin-top:50px;
+    width: 70%;
+    text-align:center;
     margin-bottom: 200px;
 }
 
 .icons--container{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 125px;
 }
 
 .icons--item{
@@ -236,27 +257,36 @@ bottom: -24px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 250px;
+    text-align:center
 }
 
-.icons--item i{
+
+.icons--item img{
     height: 70px;
     width: 70px;
     margin-bottom: 40px;
 }
 
-.icons--item i:hover{
+.icons--item img:hover{
 transform: scale(1.5, 1.5);
 }
-
+.myslider{
+    width:1360px; height:1000px; margin-left: 40px;
+}
 .banda{
     transform: rotate(10deg);
     margin-left: -20px;
+    height:50px;
+    width:1400px
+
 }
 
 
 .banda-azul{
     transform: rotate(-10deg);
     margin-left: -20px;
+    height:50px;
+    width:1400px
 }
 
 
@@ -267,9 +297,239 @@ transform: scale(1.5, 1.5);
     align-items: center;
     color:white
 }
+.team{
+    width:600px
+}
 
-.about h2{
-    margin-top :-100px;
-    margin-left: 200px;
-    margin-bottom: 100px;
+
+.about-title{
+    font-family: 'Archivo Black', sans-serif;
+    
+    margin-top :-180px;
+    margin-left: 140px;
+    
+}
+
+.about-text{
+    width: 75%;
+    position:relative;
+font-family: 'Heebo', sans-serif;
+   top:63px;
+    left: 84px;
+text-align: center;
+font-size: 15px;
+}
+
+.super_hover button{
+    position: absolute;
+    font-family: 'Archivo Black', sans-serif;
+
+top: 2960px;
+    z-index: 9;
+    height: 160px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(#061dfb,#4016fc, #8b0efe,#c906ff);
+}
+
+.super_hover button:first-child{
+    background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+
+.super_hover button:last-child{
+    background: linear-gradient(90deg, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+
+.super_hover button:first-child::before,
+.super_hover button:last-child::before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top:-1px;left:-5px;right:-5px;bottom:-1px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.super_hover button:hover:first-child::before,
+.super_hover button:hover:last-child::before{
+    opacity: 1;
+    z-index:-1;
+}
+
+.super_hover button{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        z-index: 1;
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+    }
+
+    @media(max-width:1170px){
+        .logo{
+            position: relative;
+            left:100px
+        }
+
+        .title{
+        left: 200px;
+
+        }
+
+        .subtitle{
+            left:350px
+        }
+        
+    }
+
+@media(max-width:500px){
+
+    .logo{
+        position:relative;
+        left:65px
+    }
+ 
+
+    header label{
+        display:flex;
+        margin-top:29px;
+        position:relative;
+        left:80px;
+        top:5px
+
+        
+    }
+
+    .menu{
+        position:absolute;
+        background:white;
+        flex-direction:column;
+        left:-250px;
+        width:40%;
+        transition:.5s;
+    }
+
+
+    .header-menu{
+        color:white
+    }
+
+    #btn-menu:checked ~ .menu{
+        left:0px;
+        border-radius:50px;
+        margin-top:121px;
+        width:440px;
+        height: 634px;
+        justify-content: space-between;
+      
+        
+
+
+    }
+
+    .triangulo{
+        display:none
+    }
+
+    .down--button__container:hover ul, ul:hover{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left:180px;
+    }
+
+    .title{
+        left:17px;
+        font-size: 55px;
+    }
+
+    .subtitle{
+        left: 50px;
+    }
+    .icons--container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main{
+        width: 400px;
+        margin-left:-39px;
+    margin-top:-10px
+
+    }
+    .myslider{
+        width: 400px;
+        height: 300px;
+        
+    }
+    .myslider img{
+        width: 400px
+
+    }
+    .post-carrousel{
+    margin-left: 47px;
+
+    }
+
+    .super_hover button {
+        top: 2990px;
+    }
+
+
+    .banda{
+        width: 450px;
+    transform: rotate(20deg);
+    height: 24px;
+    position: relative;
+top: -100px;
+    }
+    .banda-azul{
+        
+        width: 450px;
+    transform: rotate(-20deg);
+    height: 24px;
+    position: relative;
+    top: -100px;
+
+    }
+
+    .about {
+        
+        flex-direction:column-reverse;
+    }
+
+    .about-title{
+    margin-top :-180px;
+
+        margin-left: 103px;
+width: 269px;
+    }
+    .about-text{
+        left: 47px;
+        margin-bottom:50px
+    }
+
+    .icons--item{
+    margin-bottom: 50px;
+        position: relative;right: 10px;
+    }
 }

@@ -439,11 +439,12 @@ background:rgba(248, 248, 248)
         }
 
         .form--container{
-            width:390px;
-            left:25px;
+            
     height: 780px;
-    margin-top:50px
-
+    margin-top:50px;
+    
+    width: 370px;
+    left: 16px;
         }
 
         .form--input{

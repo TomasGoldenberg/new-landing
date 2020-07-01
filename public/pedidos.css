@@ -1,9 +1,29 @@
+
+
+
 ul{
     display: flex;
     flex-wrap: wrap;
 
 }
 li{
-    margin:20px 20px;
+    margin: 20px 20px;
+    height: 300px;
     border: 1px solid black;
+    width: 400px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+li p{
+    border-bottom:1px dotted rgb(60, 16, 221);
+    width: 100%;
+    text-align: center;
+}
+
+li:hover{
+    background-color:rgb(237, 237, 237)
 }
